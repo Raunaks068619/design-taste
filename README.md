@@ -149,73 +149,73 @@ ALL CAPS without ≥0.06em tracking is the single most reliable AI-slop tell. Di
 
 ---
 
-## Sample outputs
+## Built with design-taste
 
-> Outputs generated via [open-design.ai](https://open-design.ai) — the official runtime for design-taste specimens.
+Real projects designed and shipped using this skill.
 
-### SaaS Landing Page — editorial-technical specimen
+---
+
+### VoiceFlow — macOS voice dictation app
+
+[![VoiceFlow](https://img.shields.io/badge/Raunaks068619%2FVoiceFlow-black?style=flat-square&logo=github)](https://github.com/Raunaks068619/VoiceFlow)
+
+![VoiceFlow hero](assets/voiceflow-screenshot.png)
+
+![VoiceFlow app — Run Log view](assets/voiceflow-app-screenshot.webp)
+
+**VoiceFlow** is a local-first macOS menu-bar app for voice typing. Hold `fn`, speak, release — words land in any focused app as clean text. The UI was designed with design-taste using the `utility / minimal` tone on a product register.
+
+| Token | Value |
+|---|---|
+| Register | Product |
+| Specimen | utility-minimal (custom) |
+| Theme | Dark: sidebar `#0d0d0d`, surface `#111111` |
+| Accent | Amber `#f59e0b` — used on the `fn` kbd badge only |
+| Display | System SF Pro |
+| Body | System SF Pro Text |
+| Weight system | Read 400 / Emphasize 500 / Announce 600 |
+
+Design decisions visible in the screenshot:
+- `fn` key rendered as a `<kbd>` chip with amber fill — sole accent use per screen ✓
+- Sidebar uses proximity grouping (8px within group, 32px between) — no borders needed
+- Metric panel (73 dictations / 1698 words / 2 days) uses Announce weight at 28px with `-0.02em` tracking ✓
+- Run log rows: body weight, `0` tracking, 15px — Read tier ✓
+- No emoji icons anywhere in the chrome ✓
+
+---
+
+### Scrape Anything — AI-powered web scraper
+
+[![Scrapling](https://img.shields.io/badge/built%20on-Scrapling-black?style=flat-square)](https://scrapling.dev)
+
+![Scrape Anything UI](assets/scrapling-screenshot.webp)
+
+**Scrape Anything** — paste a URL, get back clean JSON + Markdown every time via a stealth browser. Single-page tool UI designed with design-taste using `utility / brutalist` tone.
+
+| Token | Value |
+|---|---|
+| Register | Product |
+| Specimen | utility-brutalist (custom) |
+| Theme | Light: background `#fafafa`, surface white |
+| Accent | Royal blue `#2563eb` — used on the Scrape CTA only |
+| Display | Custom display sans, ~5.5rem, weight 900, `-0.03em` tracking ✓ |
+| Body | System sans, 18px |
+| Weight system | Read 400 / Announce 900 (two-weight, intentional) |
+
+Design decisions visible in the screenshot:
+- Single accent (`#2563eb`) on the pill-shaped CTA — zero other accent uses ✓
+- Display headline "Scrape anything." uses strong negative tracking at 90px ✓
+- `⌘ K focuses the URL field` — one product-aware microcopy detail that passes the soul test ✓
+- Result panel: monospace body for JSON code, `+0.01em` tracking on small labels ✓
+- No gradients, no cards with left-border accents, no emoji ✓
+
+---
+
+### Sample outputs — Design Systems Library
 
 ![Design Systems Library](assets/design-systems-library.png)
 
-*Type-led landing page using the editorial-technical specimen: tight typographic grid, monochrome surface with a single accent, monoline SVG icons. Generated with the `linear-app-saas` direction.*
-
----
-
-### Design Systems Library — specimen board
-
-The skill routes across a curated board of specimens. Each entry includes:
-- Substrate (background, surface, border treatment)
-- Display + body + mono font stacks
-- Accent palette (OKLCH tokens)
-- Component pattern rules
-- Banned moves (per-specimen)
-
-```
-Specimen: editorial-technical
-Direction: linear-app-saas
-Audience: dev-twitter
-Tone: utility / minimal
-Surface: 1440px desktop with mobile collapse
-Accent: oklch(55% 0.15 250)  ← single accent, ≤2 visible uses per screen
-Display: Berkeley Mono / JetBrains Mono
-Body: Inter / system-ui
-```
-
----
-
-### Pitch Deck — guizang-editorial specimen
-
-```
-Specimen: deck-guizang-editorial
-Direction: magazine-swiss
-Audience: early-stage investors
-Tone: editorial / luxury
-Surface: 16:9, 10 slides
-Accent: oklch(48% 0.12 30)  ← warm rust
-Display: Playfair Display / Cormorant
-Body: Neue Haas Grotesk / Inter
-```
-
-Section list: `cover → problem → market → product walkthrough → traction → team → ask → appendix`
-
-*Apply: Hick's Law (cap visible primary options to 3–5), Peak-End Rule (traction slide carries the emotional peak, ask slide closes the arc)*
-
----
-
-### Instagram Carrousel — higgsfield-friendly-editorial specimen
-
-```
-Specimen: higgsfield-friendly-editorial
-Direction: warm-editorial
-Audience: design-twitter
-Tone: playful / editorial
-Surface: 1080×1350px, 6 slides
-Accents: oklch(58% 0.15 35) terracotta + oklch(75% 0.18 120) chartreuse
-Display: Recoleta / Freight Display
-Body: Söhne / system-ui
-```
-
-*Two accents as a signature — this is the scoped exception in the color system. Sticker-style headers, not feature icons.*
+*The specimen board from [open-design.ai](https://open-design.ai) — 150+ portable DESIGN.md systems the skill routes across.*
 
 ---
 
